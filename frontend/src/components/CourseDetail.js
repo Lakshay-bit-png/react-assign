@@ -28,7 +28,7 @@ const CourseDetail = ({ course }) => {
 
     try {
         // Make fetch call to login endpoint
-        const response = await fetch('http://localhost:3030/api/course/'+course._id + "/" + uid, {
+        const response = await fetch('https://react-assign.onrender.com/api/course/'+course._id + "/" + uid, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
