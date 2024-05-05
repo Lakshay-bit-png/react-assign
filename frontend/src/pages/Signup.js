@@ -15,7 +15,7 @@ const SignupPage = () => {
 
       try {
           // Make fetch call to login endpoint
-          const response = await fetch('http://localhost:3030/api/users/signup', {
+          const response = await fetch('https://react-assign.onrender.com/api/users/signup', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'
