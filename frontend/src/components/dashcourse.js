@@ -24,7 +24,7 @@ const Dashcourse = ({ courses }) => {
       newProgress[userIndex] = 100; // Assuming completion means 100% progress
   
       // Make fetch call to update course progress
-      const response = await fetch(`http://localhost:3030/api/course/${cid}`, {
+      const response = await fetch(`https://react-assign.onrender.com/api/course/${cid}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
