@@ -13,7 +13,7 @@ export const Searchbar = ({ onSearchResults }) => {
       try {
         setLoading(true);
         const response = await fetch(
-          `http://localhost:3030/api/course/search?keyword=${searchTerm}`,
+          `https://react-assign.onrender.com/api/course/search?keyword=${searchTerm}`,
           { method: "GET" }
         );
         const searchData = await response.json();
