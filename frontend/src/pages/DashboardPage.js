@@ -49,7 +49,7 @@ const DashboardPage = ({ courses , fetchCourses }) => {
     const getuser = async()=>{
       try {
         // Make fetch call to login endpoint
-        const response = await fetch('http://localhost:3030/api/users/'+uid, {
+        const response = await fetch('https://react-assign.onrender.com/api/users/'+uid, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
