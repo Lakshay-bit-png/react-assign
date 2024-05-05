@@ -6,7 +6,7 @@ export const fetchCourses = () => {
     dispatch({ type: FETCH_COURSES_REQUEST });
     try {
       // Fetch courses from API
-      const response = await fetch('http://localhost:3030/api/course');
+      const response = await fetch('https://react-assign.onrender.com/api/course');
       const data = await response.json();
       dispatch({ type: FETCH_COURSES_SUCCESS, payload: data });
       console.log(data)
@@ -21,7 +21,7 @@ export const fetchCourseById = (courseId) => {
       dispatch({ type: FETCH_COURSES_REQUEST });
       try {
         // Fetch course from API
-        const response = await fetch(`http://localhost:3030/api/course/${courseId}`);
+        const response = await fetch(`https://react-assign.onrender.com/api/course/${courseId}`);
         const data = await response.json();
         dispatch({ type: FETCH_COURSES_SUCCESS, payload: data });
         console.log(data);
